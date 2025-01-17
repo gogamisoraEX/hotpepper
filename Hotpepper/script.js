@@ -2,7 +2,7 @@ const API_KEY = "80a343317afa3b8e"
 const API_URL = "https://webservice.recruit.co.jp/hotpepper/gourmet/v1/"
 
 document.getElementById("search-form"),addEventListener("submit", async (event) => {
-    console.log(API_KEY);
+    console.log("検索一回");
     event.preventDefault();
     const keyword = document.getElementById("keyword").value;
     document.getElementById("results").innerHTML = keyword;
@@ -31,7 +31,8 @@ function displayResults(shops) {
             shopDiv.innerHTML = `
                 <h2>${shop.name}</h2>
                 <p>住所:${shop.address}</p>
-                <p><a href = "http://${shop.log_image}">${shop.log_image}</a></p>
+                <p><a href = "${shop.urls.pc}" target="_blank">店舗情報を見る</a></p>
+               <img src = "${shop.photo.pc.l}">
                 <hr>
             `;
             resultsDiv.appendChild(shopDiv);
