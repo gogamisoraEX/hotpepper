@@ -1,0 +1,16 @@
+{
+    "results":{
+        "api_version": "1.30",
+        "results_avaliable": 2,
+        "results_returned": "2",
+        "results_start": 1,
+        "shop": [
+                {
+                    "id": "J001293598",
+                    "name": "Taiwan Bee",
+                    "logo_image": "https://imgfp.hotp.jp/IMGH/84/33/P039398433/P039398433_69.jpg",
+                    "name_kana": "たいわん　びー"
+                }
+        ]
+    }
+}
